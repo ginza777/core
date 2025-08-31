@@ -1,0 +1,2151 @@
+ERROR 2025-08-31 22:54:52,952 log 32151 6183874560 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-08-31 22:54:52,953 basehttp 32151 6183874560 "GET /admin/ HTTP/1.1" 500 138315
+INFO 2025-08-31 22:54:52,954 basehttp 32151 6183874560 - Broken pipe from ('127.0.0.1', 53761)
+ERROR 2025-08-31 22:55:42,839 log 32690 6115471360 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-08-31 22:55:42,840 basehttp 32690 6115471360 "GET /admin/ HTTP/1.1" 500 138315
+INFO 2025-08-31 22:55:42,840 basehttp 32690 6115471360 - Broken pipe from ('127.0.0.1', 53784)
+INFO 2025-08-31 22:55:50,992 autoreload 32927 8590729408 Watching for file changes with StatReloader
+ERROR 2025-08-31 22:56:48,794 exception 32927 6193295360 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 22:56:48,818 log 32927 6193295360 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 22:56:48,818 basehttp 32927 6193295360 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80865
+ERROR 2025-08-31 22:57:49,410 exception 32927 6193295360 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 22:57:49,423 log 32927 6193295360 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 22:57:49,423 basehttp 32927 6193295360 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80865
+ERROR 2025-08-31 22:58:29,273 exception 32927 6193295360 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 22:58:29,304 log 32927 6193295360 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 22:58:29,304 basehttp 32927 6193295360 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80865
+ERROR 2025-08-31 22:59:23,843 exception 32927 6193295360 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 22:59:23,863 log 32927 6193295360 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 22:59:23,864 basehttp 32927 6193295360 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80865
+INFO 2025-08-31 22:59:42,607 autoreload 32927 8590729408 /Users/sherzamon/core/apps/kuku_ai_bot/utils.py changed, reloading.
+INFO 2025-08-31 22:59:43,294 autoreload 32981 8590729408 Watching for file changes with StatReloader
+ERROR 2025-08-31 22:59:55,688 exception 32981 6170193920 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 22:59:55,716 log 32981 6170193920 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 22:59:55,716 basehttp 32981 6170193920 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80865
+ERROR 2025-08-31 23:00:51,158 exception 32981 6170193920 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:00:51,180 log 32981 6170193920 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:00:51,180 basehttp 32981 6170193920 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80865
+ERROR 2025-08-31 23:01:30,003 exception 32981 6170193920 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:01:30,026 log 32981 6170193920 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:01:30,026 basehttp 32981 6170193920 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80865
+ERROR 2025-08-31 23:04:10,306 log 33486 6111440896 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-08-31 23:04:10,306 basehttp 33486 6111440896 "GET /admin/ HTTP/1.1" 500 137771
+INFO 2025-08-31 23:04:10,307 basehttp 33486 6111440896 - Broken pipe from ('127.0.0.1', 53950)
+INFO 2025-08-31 23:04:18,740 autoreload 33735 8590729408 Watching for file changes with StatReloader
+ERROR 2025-08-31 23:05:09,557 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:05:09,579 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:05:09,579 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:06:21,526 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:06:21,549 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:06:21,550 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:06:27,149 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:06:27,173 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:06:27,174 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:07:26,119 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:07:26,139 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:07:26,139 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:07:59,487 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:07:59,513 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:07:59,513 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:09:07,691 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:09:07,715 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:09:07,715 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:09:48,883 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:09:48,907 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:09:48,907 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:10:27,206 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:10:27,231 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:10:27,231 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:11:09,406 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:11:09,426 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:11:09,427 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:11:35,708 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:11:35,733 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:11:35,733 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:13:07,016 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:13:07,040 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:13:07,040 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:13:22,263 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:13:22,288 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:13:22,288 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:14:48,359 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:14:48,383 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:14:48,383 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:15:15,883 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:15:15,908 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:15:15,908 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:16:14,963 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:16:14,983 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:16:14,983 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:16:27,215 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:16:27,238 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:16:27,239 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:17:52,484 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:17:52,507 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:17:52,507 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:18:11,537 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:18:11,561 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:18:11,561 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:19:38,793 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:19:38,813 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:19:38,813 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:20:11,067 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:20:11,092 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:20:11,092 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:21:38,306 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:21:38,329 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:21:38,330 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:21:38,644 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:21:38,664 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:21:38,664 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:22:50,638 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:22:50,661 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:22:50,661 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:23:11,226 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:23:11,248 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:23:11,248 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:24:41,227 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:24:41,251 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:24:41,251 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:25:02,557 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:25:02,582 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:25:02,582 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:26:20,078 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:26:20,095 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:26:20,096 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:26:35,749 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:26:35,774 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:26:35,775 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:27:39,367 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:27:39,388 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:27:39,388 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:28:28,164 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:28:28,177 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:28:28,178 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:28:59,935 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:28:59,958 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:28:59,958 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:30:26,677 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:30:26,698 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:30:26,699 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:30:44,257 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:30:44,277 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:30:44,277 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:31:51,357 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:31:51,378 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:31:51,378 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:32:09,777 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:32:09,797 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:32:09,797 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:33:40,120 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:33:40,141 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:33:40,142 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:33:46,681 exception 33735 6168899584 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:33:46,700 log 33735 6168899584 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:33:46,700 basehttp 33735 6168899584 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80321
+ERROR 2025-08-31 23:34:47,034 log 33735 6168899584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-08-31 23:34:47,035 basehttp 33735 6168899584 "GET / HTTP/1.1" 500 139757
+INFO 2025-08-31 23:39:14,870 autoreload 34471 8590729408 Watching for file changes with StatReloader
+INFO 2025-08-31 23:39:19,622 basehttp 34471 6169784320 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-31 23:39:27,060 basehttp 34471 6169784320 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-31 23:39:30,142 basehttp 34471 6169784320 "GET /admin/ HTTP/1.1" 302 0
+ERROR 2025-08-31 23:40:28,652 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:40:28,680 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:40:28,680 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:40:59,504 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:40:59,525 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:40:59,525 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:42:04,541 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:42:04,565 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:42:04,565 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:42:25,936 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:42:25,957 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:42:25,957 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:44:03,107 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:44:03,127 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:44:03,127 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:44:16,522 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:44:16,542 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:44:16,542 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:45:07,625 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:45:07,646 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:45:07,646 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:45:21,867 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:45:21,886 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:45:21,886 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:47:06,058 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:47:06,069 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:47:06,069 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:47:18,402 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:47:18,432 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:47:18,433 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:55:25,898 exception 34471 13203795968 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:55:25,943 log 34471 13203795968 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:55:25,943 basehttp 34471 13203795968 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:55:57,652 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:55:57,665 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:55:57,666 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:56:36,415 exception 34471 6169784320 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:56:36,436 log 34471 6169784320 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:56:36,436 basehttp 34471 6169784320 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+INFO 2025-08-31 23:57:11,693 autoreload 34471 8590729408 /Users/sherzamon/core/core_project/settings/base.py changed, reloading.
+INFO 2025-08-31 23:57:12,120 autoreload 35007 8590729408 Watching for file changes with StatReloader
+ERROR 2025-08-31 23:57:16,180 exception 35007 6130413568 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:57:16,208 log 35007 6130413568 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:57:16,209 basehttp 35007 6130413568 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:58:24,520 exception 35007 6130413568 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:58:24,531 log 35007 6130413568 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:58:24,532 basehttp 35007 6130413568 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+ERROR 2025-08-31 23:58:30,970 exception 35007 6130413568 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-08-31 23:58:30,991 log 35007 6130413568 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-08-31 23:58:30,991 basehttp 35007 6130413568 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80141
+INFO 2025-09-01 00:08:00,373 autoreload 35901 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:08:03,762 autoreload 35901 8590729408 /Users/sherzamon/core/apps/bot/urls.py changed, reloading.
+INFO 2025-09-01 00:08:04,174 autoreload 35968 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:08:04,985 basehttp 35968 6200832000 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:08:16,504 basehttp 35968 6200832000 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-09-01 00:08:20,888 log 35968 6200832000 Not Found: /api/bot/test-token/
+WARNING 2025-09-01 00:08:20,888 basehttp 35968 6200832000 "GET /api/bot/test-token/ HTTP/1.1" 404 6821
+WARNING 2025-09-01 00:08:21,510 log 35968 6200832000 Not Found: /
+WARNING 2025-09-01 00:08:21,510 basehttp 35968 6200832000 "GET / HTTP/1.1" 404 3147
+INFO 2025-09-01 00:08:25,724 basehttp 35968 6200832000 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:08:25,737 basehttp 35968 6200832000 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3188
+INFO 2025-09-01 00:08:25,746 basehttp 35968 6200832000 "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:25,749 basehttp 35968 6217658368 "GET /static/vendor/bootswatch/cosmo/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:25,749 basehttp 35968 6234484736 "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:25,750 basehttp 35968 6284963840 "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:25,750 basehttp 35968 6251311104 "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:25,750 basehttp 35968 6268137472 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:25,751 basehttp 35968 6217658368 "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:25,755 basehttp 35968 6200832000 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-09-01 00:08:26,064 basehttp 35968 6234484736 "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:26,073 basehttp 35968 6251311104 "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:29,514 basehttp 35968 6268137472 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:08:29,534 basehttp 35968 6284963840 "GET /admin/ HTTP/1.1" 200 36518
+INFO 2025-09-01 00:08:29,548 basehttp 35968 6200832000 "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:29,548 basehttp 35968 6217658368 "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:31,270 basehttp 35968 6251311104 "GET /admin/multiparser/document/ HTTP/1.1" 200 34804
+INFO 2025-09-01 00:08:31,280 basehttp 35968 6284963840 "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:31,282 basehttp 35968 6200832000 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-09-01 00:08:31,282 basehttp 35968 6234484736 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-09-01 00:08:31,282 basehttp 35968 6217658368 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-09-01 00:08:31,283 basehttp 35968 6284963840 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-09-01 00:08:31,283 basehttp 35968 6251311104 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-09-01 00:08:31,285 basehttp 35968 6200832000 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-09-01 00:08:31,285 basehttp 35968 6284963840 "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:31,285 basehttp 35968 6217658368 "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-09-01 00:08:31,287 basehttp 35968 6268137472 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:08:31,287 basehttp 35968 6234484736 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-09-01 00:08:31,936 basehttp 35968 6284963840 "GET /admin/multiparser/productview/ HTTP/1.1" 200 32443
+INFO 2025-09-01 00:08:31,948 basehttp 35968 6200832000 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-09-01 00:08:32,030 exception 35968 6301790208 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:08:32,040 log 35968 6301790208 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:08:32,040 basehttp 35968 6301790208 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80125
+INFO 2025-09-01 00:08:32,551 basehttp 35968 6268137472 "GET /admin/multiparser/product/ HTTP/1.1" 200 32713
+INFO 2025-09-01 00:08:32,562 basehttp 35968 6234484736 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:08:33,052 basehttp 35968 6284963840 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:08:33,063 basehttp 35968 6200832000 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:08:35,059 autoreload 35968 8590729408 /Users/sherzamon/core/apps/bot/urls.py changed, reloading.
+INFO 2025-09-01 00:08:35,686 autoreload 36275 8590729408 Watching for file changes with StatReloader
+ERROR 2025-09-01 00:08:41,856 exception 36275 6129479680 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:08:41,870 log 36275 6129479680 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:08:41,870 basehttp 36275 6129479680 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80125
+INFO 2025-09-01 00:08:48,130 autoreload 36275 8590729408 /Users/sherzamon/core/apps/bot/urls.py changed, reloading.
+INFO 2025-09-01 00:08:48,548 autoreload 36299 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:09:14,242 autoreload 36299 8590729408 /Users/sherzamon/core/apps/bot/admin.py changed, reloading.
+INFO 2025-09-01 00:09:14,681 autoreload 36307 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:09:15,577 basehttp 36307 6129004544 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:09:15,590 basehttp 36307 6129004544 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:09:31,128 autoreload 36307 8590729408 /Users/sherzamon/core/apps/bot/models.py changed, reloading.
+INFO 2025-09-01 00:09:31,537 autoreload 36316 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:09:43,695 basehttp 36316 12918534144 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:09:51,506 basehttp 36316 12918534144 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:09:59,273 autoreload 36316 8590729408 /Users/sherzamon/core/apps/bot/admin.py changed, reloading.
+INFO 2025-09-01 00:09:59,680 autoreload 36636 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:10:01,804 basehttp 36636 6169260032 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:10:01,813 basehttp 36636 6169260032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:10:02,680 basehttp 36636 6169260032 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:10:02,691 basehttp 36636 6169260032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-09-01 00:10:16,844 exception 36636 6186086400 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:10:16,861 log 36636 6186086400 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:10:16,861 basehttp 36636 6186086400 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80125
+INFO 2025-09-01 00:10:39,594 autoreload 36636 8590729408 /Users/sherzamon/core/apps/bot/admin.py changed, reloading.
+INFO 2025-09-01 00:10:39,986 autoreload 36655 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:10:52,364 autoreload 36655 8590729408 /Users/sherzamon/core/apps/bot/admin.py changed, reloading.
+INFO 2025-09-01 00:10:52,792 autoreload 36664 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:10:59,412 basehttp 36664 6125400064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:11:02,977 basehttp 36664 6125400064 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:11:02,990 basehttp 36664 6125400064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:11:03,720 basehttp 36664 6125400064 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:11:03,730 basehttp 36664 6125400064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:11:05,037 basehttp 36664 6125400064 "GET /admin/multiparser/document/ HTTP/1.1" 200 34804
+INFO 2025-09-01 00:11:05,048 basehttp 36664 6125400064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:11:05,584 basehttp 36664 6125400064 "GET /admin/multiparser/productview/ HTTP/1.1" 200 32443
+INFO 2025-09-01 00:11:05,596 basehttp 36664 6125400064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:11:05,963 basehttp 36664 6125400064 "GET /admin/multiparser/product/ HTTP/1.1" 200 32713
+INFO 2025-09-01 00:11:05,976 basehttp 36664 6125400064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:11:06,310 basehttp 36664 6125400064 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:11:06,322 basehttp 36664 6125400064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:11:18,778 basehttp 36664 6125400064 "GET /admin/multiparser/seller/ HTTP/1.1" 200 32409
+INFO 2025-09-01 00:11:18,782 basehttp 36664 6142226432 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:11:21,715 autoreload 36664 8590729408 /Users/sherzamon/core/apps/bot/admin.py changed, reloading.
+INFO 2025-09-01 00:11:22,082 autoreload 36896 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:11:22,352 basehttp 36896 6189281280 "GET /admin/ HTTP/1.1" 200 36518
+INFO 2025-09-01 00:11:24,293 autoreload 36896 8590729408 /Users/sherzamon/core/apps/bot/admin.py changed, reloading.
+INFO 2025-09-01 00:11:24,692 autoreload 36897 8590729408 Watching for file changes with StatReloader
+ERROR 2025-09-01 00:11:40,346 exception 36897 6133100544 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:11:40,362 log 36897 6133100544 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:11:40,362 basehttp 36897 6133100544 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80125
+ERROR 2025-09-01 00:11:42,207 exception 36897 6133100544 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:11:42,218 log 36897 6133100544 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:11:42,218 basehttp 36897 6133100544 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80126
+ERROR 2025-09-01 00:11:44,531 exception 36897 6133100544 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:11:44,550 log 36897 6133100544 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:11:44,550 basehttp 36897 6133100544 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80126
+ERROR 2025-09-01 00:11:49,033 exception 36897 6133100544 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:11:49,047 log 36897 6133100544 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:11:49,054 basehttp 36897 6133100544 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80126
+INFO 2025-09-01 00:11:53,606 autoreload 36897 8590729408 /Users/sherzamon/core/apps/multiparser/admin.py changed, reloading.
+INFO 2025-09-01 00:11:54,020 autoreload 36919 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:12:04,361 autoreload 36919 8590729408 /Users/sherzamon/core/apps/multiparser/admin.py changed, reloading.
+INFO 2025-09-01 00:12:04,764 autoreload 36924 8590729408 Watching for file changes with StatReloader
+ERROR 2025-09-01 00:12:13,344 exception 36924 6157692928 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:12:13,356 log 36924 6157692928 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:12:13,356 basehttp 36924 6157692928 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80126
+INFO 2025-09-01 00:12:13,704 basehttp 36924 6157692928 "GET /admin/ HTTP/1.1" 200 36518
+INFO 2025-09-01 00:12:14,442 basehttp 36924 6157692928 "GET /admin/ HTTP/1.1" 200 36518
+INFO 2025-09-01 00:12:18,379 autoreload 36924 8590729408 /Users/sherzamon/core/apps/multiparser/admin.py changed, reloading.
+INFO 2025-09-01 00:12:18,838 autoreload 36933 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:12:32,240 basehttp 36933 6169538560 "GET /admin/ HTTP/1.1" 200 45012
+INFO 2025-09-01 00:12:32,248 basehttp 36933 13035925504 "GET /admin/ HTTP/1.1" 302 0
+ERROR 2025-09-01 00:12:34,106 log 36933 6169538560 Internal Server Error: /admin/bot/broadcast/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: bot_broadcast
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/views/main.py", line 146, in __init__
+    self.get_results(request)
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/views/main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: bot_broadcast
+ERROR 2025-09-01 00:12:34,108 basehttp 36933 6169538560 "GET /admin/bot/broadcast/ HTTP/1.1" 500 208095
+INFO 2025-09-01 00:12:43,615 basehttp 36933 13304360960 "GET /admin/ HTTP/1.1" 302 0
+ERROR 2025-09-01 00:12:45,632 exception 36933 13304360960 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:12:45,641 log 36933 13304360960 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:12:45,641 basehttp 36933 13304360960 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80126
+INFO 2025-09-01 00:12:58,218 basehttp 36933 13304360960 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:13:05,963 autoreload 37456 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:13:56,858 autoreload 37594 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:14:01,198 basehttp 37594 6166720512 "GET /admin/ HTTP/1.1" 200 45012
+ERROR 2025-09-01 00:14:04,796 log 37594 6166720512 Internal Server Error: /admin/bot/user/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: bot_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/views/main.py", line 146, in __init__
+    self.get_results(request)
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/contrib/admin/views/main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: bot_user
+ERROR 2025-09-01 00:14:04,799 basehttp 37594 6166720512 "GET /admin/bot/user/ HTTP/1.1" 500 203970
+ERROR 2025-09-01 00:14:05,482 exception 37594 6183546880 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:14:05,508 log 37594 6183546880 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:14:05,509 basehttp 37594 6183546880 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80125
+ERROR 2025-09-01 00:14:07,254 exception 37594 6183546880 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:14:07,277 log 37594 6183546880 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:14:07,278 basehttp 37594 6183546880 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80126
+INFO 2025-09-01 00:16:58,743 autoreload 38897 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:17:04,024 basehttp 38897 6163951616 "GET /admin/bot/user/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:17:04,033 basehttp 38897 6163951616 "GET /admin/login/?next=/admin/bot/user/ HTTP/1.1" 200 3197
+INFO 2025-09-01 00:17:04,806 autoreload 39254 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:17:07,632 basehttp 38897 6163951616 "POST /admin/login/?next=/admin/bot/user/ HTTP/1.1" 200 3520
+ERROR 2025-09-01 00:17:09,110 log 38897 6180777984 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:17:09,110 basehttp 38897 6180777984 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80127
+INFO 2025-09-01 00:17:11,834 basehttp 38897 6180777984 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:17:15,036 basehttp 38897 6163951616 "POST /admin/login/?next=/admin/bot/user/ HTTP/1.1" 200 3520
+INFO 2025-09-01 00:17:18,465 autoreload 39435 8590729408 Watching for file changes with StatReloader
+ERROR 2025-09-01 00:17:21,923 log 38897 6180777984 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:17:21,923 basehttp 38897 6180777984 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80127
+INFO 2025-09-01 00:17:30,013 basehttp 38897 6163951616 "POST /admin/login/?next=/admin/bot/user/ HTTP/1.1" 200 3520
+INFO 2025-09-01 00:17:37,869 autoreload 38897 8590729408 /Users/sherzamon/core/apps/multiparser/admin.py changed, reloading.
+INFO 2025-09-01 00:17:38,268 autoreload 39782 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:17:39,645 basehttp 39782 6197899264 "POST /admin/login/?next=/admin/bot/user/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:17:39,676 basehttp 39782 6197899264 "GET /admin/bot/user/ HTTP/1.1" 200 36111
+INFO 2025-09-01 00:17:39,691 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:40,964 basehttp 39782 6197899264 "GET /admin/bot/subscribechannel/ HTTP/1.1" 200 36189
+INFO 2025-09-01 00:17:40,976 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:41,494 basehttp 39782 6197899264 "GET /admin/bot/searchquery/ HTTP/1.1" 200 36013
+INFO 2025-09-01 00:17:41,507 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:41,821 basehttp 39782 6197899264 "GET /admin/bot/location/ HTTP/1.1" 200 34953
+INFO 2025-09-01 00:17:41,833 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:42,173 basehttp 39782 6197899264 "GET /admin/bot/broadcast/ HTTP/1.1" 200 36913
+INFO 2025-09-01 00:17:42,185 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:42,778 basehttp 39782 6197899264 "GET /admin/multiparser/seller/ HTTP/1.1" 200 34962
+INFO 2025-09-01 00:17:42,790 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:43,127 basehttp 39782 6197899264 "GET /admin/multiparser/product/ HTTP/1.1" 200 35266
+INFO 2025-09-01 00:17:43,138 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:43,423 basehttp 39782 6197899264 "GET /admin/multiparser/productview/ HTTP/1.1" 200 34996
+INFO 2025-09-01 00:17:43,434 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:17:43,910 basehttp 39782 6197899264 "GET /admin/multiparser/document/ HTTP/1.1" 200 37357
+INFO 2025-09-01 00:17:43,919 basehttp 39782 6197899264 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-01 00:18:00,467 autoreload 39824 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:21:20,037 autoreload 41724 8590729408 Watching for file changes with StatReloader
+WARNING 2025-09-01 00:21:24,168 log 41724 6132838400 Not Found: /
+WARNING 2025-09-01 00:21:24,169 basehttp 41724 6132838400 "GET / HTTP/1.1" 404 3147
+INFO 2025-09-01 00:21:27,652 basehttp 41724 6132838400 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:21:32,228 basehttp 41724 6132838400 "GET /swagger/ HTTP/1.1" 200 2219
+ERROR 2025-09-01 00:21:35,693 exception 41724 6132838400 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:21:35,711 log 41724 6132838400 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:21:35,711 basehttp 41724 6132838400 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80159
+ERROR 2025-09-01 00:22:04,415 exception 41724 6132838400 Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sherzamon.jprq.site'. You may need to add 'sherzamon.jprq.site' to ALLOWED_HOSTS.
+WARNING 2025-09-01 00:22:04,441 log 41724 6132838400 Bad Request: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:22:04,441 basehttp 41724 6132838400 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 400 80159
+INFO 2025-09-01 00:22:06,542 autoreload 41724 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 00:22:06,891 autoreload 42198 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:22:19,349 autoreload 42198 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 00:22:20,047 autoreload 42205 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:22:24,755 autoreload 42702 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:22:29,543 basehttp 42702 6164262912 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-09-01 00:22:35,114 log 42702 6164262912 Not Found: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:22:35,114 basehttp 42702 6164262912 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 404 6927
+WARNING 2025-09-01 00:22:43,698 log 42702 6164262912 Not Found: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+WARNING 2025-09-01 00:22:43,698 basehttp 42702 6164262912 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 404 6927
+INFO 2025-09-01 00:22:53,721 autoreload 42702 8590729408 /Users/sherzamon/core/apps/bot/urls.py changed, reloading.
+INFO 2025-09-01 00:22:54,478 autoreload 43434 8590729408 Watching for file changes with StatReloader
+ERROR 2025-09-01 00:22:55,638 log 43434 6191230976 Internal Server Error: /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 262, in __call__
+    return call_result.result()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 302, in main_wrap
+    result = await awaitable
+             ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 60, in _view_wrapper
+    return await view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/apps/bot/webhook.py", line 40, in bot_webhook
+    update = Update.de_json(data, application.bot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_update.py", line 767, in de_json
+    data["message"] = Message.de_json(data.get("message"), bot)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_message.py", line 1264, in de_json
+    data["from_user"] = User.de_json(data.pop("from", None), bot)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 437, in de_json
+    return cls._de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 399, in _de_json
+    obj = cls(**data, api_kwargs=api_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: User.__init__() missing 1 required positional argument: 'is_bot'
+ERROR 2025-09-01 00:22:55,639 basehttp 43434 6191230976 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 500 106614
+INFO 2025-09-01 00:23:04,106 basehttp 43434 6191230976 "POST /api/bot/7015018136:AAG6-dBJZaeoOzZCKeOJUGKYC7PKfRwKRik HTTP/1.1" 200 16
+INFO 2025-09-01 00:23:11,576 basehttp 43434 6191230976 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:23:23,320 autoreload 43434 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 00:23:24,052 autoreload 44439 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:24:13,506 autoreload 44439 8590729408 /Users/sherzamon/core/apps/bot/urls.py changed, reloading.
+INFO 2025-09-01 00:24:14,227 autoreload 44462 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:24:18,491 autoreload 44462 8590729408 /Users/sherzamon/core/apps/bot/webhook.py changed, reloading.
+INFO 2025-09-01 00:24:19,213 autoreload 44465 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:24:22,218 basehttp 44465 6129954816 "POST /api/bot/ HTTP/1.1" 200 16
+ERROR 2025-09-01 00:24:25,496 log 44465 6129954816 Internal Server Error: /api/bot/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 399, in _de_json
+    obj = cls(**data, api_kwargs=api_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() got an unexpected keyword argument 'test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 262, in __call__
+    return call_result.result()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 302, in main_wrap
+    result = await awaitable
+             ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 60, in _view_wrapper
+    return await view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/apps/bot/webhook.py", line 40, in bot_webhook
+    update = Update.de_json(data, application.bot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_update.py", line 803, in de_json
+    return super().de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 437, in de_json
+    return cls._de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 414, in _de_json
+    obj = cls(api_kwargs=api_kwargs, **existing_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() missing 1 required positional argument: 'update_id'
+ERROR 2025-09-01 00:24:25,505 basehttp 44465 6129954816 "POST /api/bot/ HTTP/1.1" 500 113238
+INFO 2025-09-01 00:24:35,530 basehttp 44465 6129954816 "POST /api/bot/ HTTP/1.1" 200 16
+ERROR 2025-09-01 00:24:41,926 log 44465 6129954816 Internal Server Error: /api/bot/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 399, in _de_json
+    obj = cls(**data, api_kwargs=api_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() got an unexpected keyword argument 'test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 262, in __call__
+    return call_result.result()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 302, in main_wrap
+    result = await awaitable
+             ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 60, in _view_wrapper
+    return await view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/apps/bot/webhook.py", line 40, in bot_webhook
+    update = Update.de_json(data, application.bot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_update.py", line 803, in de_json
+    return super().de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 437, in de_json
+    return cls._de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 414, in _de_json
+    obj = cls(api_kwargs=api_kwargs, **existing_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() missing 1 required positional argument: 'update_id'
+ERROR 2025-09-01 00:24:41,928 basehttp 44465 6129954816 "POST /api/bot/ HTTP/1.1" 500 109384
+INFO 2025-09-01 00:24:53,362 autoreload 44465 8590729408 /Users/sherzamon/core/apps/bot/urls.py changed, reloading.
+INFO 2025-09-01 00:24:54,076 autoreload 45509 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:25:51,645 autoreload 45677 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:26:43,167 autoreload 45920 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:28:00,820 autoreload 46667 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:28:05,186 basehttp 46667 6169997312 "GET /admin/ HTTP/1.1" 302 0
+ERROR 2025-09-01 00:28:09,379 log 46667 6169997312 Internal Server Error: /api/bot/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 399, in _de_json
+    obj = cls(**data, api_kwargs=api_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() got an unexpected keyword argument 'test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 262, in __call__
+    return call_result.result()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 302, in main_wrap
+    result = await awaitable
+             ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 60, in _view_wrapper
+    return await view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/apps/bot/webhook.py", line 40, in bot_webhook
+    update = Update.de_json(data, application.bot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_update.py", line 803, in de_json
+    return super().de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 437, in de_json
+    return cls._de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 414, in _de_json
+    obj = cls(api_kwargs=api_kwargs, **existing_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() missing 1 required positional argument: 'update_id'
+ERROR 2025-09-01 00:28:09,383 basehttp 46667 6169997312 "POST /api/bot/ HTTP/1.1" 500 113238
+INFO 2025-09-01 00:28:18,478 autoreload 46667 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 00:28:19,250 autoreload 46933 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:28:24,825 autoreload 47430 8590729408 Watching for file changes with StatReloader
+ERROR 2025-09-01 00:28:29,681 log 47430 6206255104 Internal Server Error: /api/bot/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 399, in _de_json
+    obj = cls(**data, api_kwargs=api_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() got an unexpected keyword argument 'test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 262, in __call__
+    return call_result.result()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 302, in main_wrap
+    result = await awaitable
+             ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 60, in _view_wrapper
+    return await view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/apps/bot/webhook.py", line 40, in bot_webhook
+    update = Update.de_json(data, application.bot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_update.py", line 803, in de_json
+    return super().de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 437, in de_json
+    return cls._de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 414, in _de_json
+    obj = cls(api_kwargs=api_kwargs, **existing_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() missing 1 required positional argument: 'update_id'
+ERROR 2025-09-01 00:28:29,683 basehttp 47430 6206255104 "POST /api/bot/ HTTP/1.1" 500 145
+INFO 2025-09-01 00:28:34,423 basehttp 47430 6206255104 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:28:40,504 basehttp 47430 6206255104 "POST /api/bot/ HTTP/1.1" 200 16
+INFO 2025-09-01 00:28:51,759 autoreload 47430 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 00:28:52,464 autoreload 48035 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:29:07,996 autoreload 48035 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 00:29:08,745 autoreload 48051 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:29:22,668 autoreload 48669 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:29:27,786 basehttp 48669 6196899840 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:29:42,774 autoreload 49418 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:29:45,386 basehttp 49418 6341865472 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 00:30:02,385 autoreload 49418 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 00:30:03,171 autoreload 49620 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:33:06,674 autoreload 50370 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:33:10,728 basehttp 50370 6199046144 "GET /admin/ HTTP/1.1" 302 0
+ERROR 2025-09-01 00:33:19,924 log 50370 6199046144 Internal Server Error: /api/bot/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 399, in _de_json
+    obj = cls(**data, api_kwargs=api_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() got an unexpected keyword argument 'test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 262, in __call__
+    return call_result.result()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 302, in main_wrap
+    result = await awaitable
+             ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 60, in _view_wrapper
+    return await view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/apps/bot/webhook.py", line 40, in bot_webhook
+    update = Update.de_json(data, application.bot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_update.py", line 803, in de_json
+    return super().de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 437, in de_json
+    return cls._de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 414, in _de_json
+    obj = cls(api_kwargs=api_kwargs, **existing_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() missing 1 required positional argument: 'update_id'
+ERROR 2025-09-01 00:33:19,925 basehttp 50370 6199046144 "POST /api/bot/ HTTP/1.1" 500 145
+INFO 2025-09-01 00:33:28,758 basehttp 50370 6199046144 "POST /api/bot/ HTTP/1.1" 200 16
+INFO 2025-09-01 00:36:15,421 autoreload 51792 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 00:36:19,413 basehttp 51792 6126514176 "GET /admin/ HTTP/1.1" 302 0
+ERROR 2025-09-01 00:36:23,708 log 51792 6126514176 Internal Server Error: /api/bot/
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 399, in _de_json
+    obj = cls(**data, api_kwargs=api_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() got an unexpected keyword argument 'test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 262, in __call__
+    return call_result.result()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/.pyenv/versions/3.12.11/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/asgiref/sync.py", line 302, in main_wrap
+    result = await awaitable
+             ^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 60, in _view_wrapper
+    return await view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/apps/bot/webhook.py", line 40, in bot_webhook
+    update = Update.de_json(data, application.bot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_update.py", line 803, in de_json
+    return super().de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 437, in de_json
+    return cls._de_json(data=data, bot=bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sherzamon/core/venv/lib/python3.12/site-packages/telegram/_telegramobject.py", line 414, in _de_json
+    obj = cls(api_kwargs=api_kwargs, **existing_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Update.__init__() missing 1 required positional argument: 'update_id'
+ERROR 2025-09-01 00:36:23,710 basehttp 51792 6126514176 "POST /api/bot/ HTTP/1.1" 500 145
+INFO 2025-09-01 00:36:32,528 basehttp 51792 6126514176 "POST /api/bot/ HTTP/1.1" 200 16
+INFO 2025-09-01 01:09:24,439 autoreload 52834 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:09:34,340 autoreload 52993 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:29:39,498 autoreload 52993 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 01:29:39,605 autoreload 51792 8590729408 /Users/sherzamon/core/core_project/settings/develop.py changed, reloading.
+INFO 2025-09-01 01:29:40,268 autoreload 53171 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:29:40,313 autoreload 53172 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:29:46,589 autoreload 53171 8590729408 /Users/sherzamon/core/apps/bot/apps.py changed, reloading.
+INFO 2025-09-01 01:29:46,590 autoreload 53172 8590729408 /Users/sherzamon/core/apps/bot/apps.py changed, reloading.
+INFO 2025-09-01 01:29:47,318 autoreload 53185 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:29:47,355 autoreload 53186 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:30:04,506 autoreload 53898 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:30:08,472 basehttp 53898 6138163200 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 01:30:17,624 basehttp 53898 6138163200 "POST /api/bot/ HTTP/1.1" 200 16
+INFO 2025-09-01 01:30:27,302 autoreload 53898 8590729408 /Users/sherzamon/core/apps/bot/apps.py changed, reloading.
+INFO 2025-09-01 01:30:27,690 autoreload 54366 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:36:48,461 autoreload 55434 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:36:56,654 autoreload 54366 8590729408 /Users/sherzamon/core/apps/bot/apps.py changed, reloading.
+INFO 2025-09-01 01:36:57,007 autoreload 55583 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:37:01,934 autoreload 55595 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 01:37:06,142 autoreload 55612 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 02:20:36,708 autoreload 55583 8590729408 /Users/sherzamon/core/core_project/settings/base.py changed, reloading.
+INFO 2025-09-01 02:20:37,309 autoreload 55884 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 02:20:37,639 autoreload 55612 8590729408 /Users/sherzamon/core/core_project/settings/base.py changed, reloading.
+INFO 2025-09-01 02:20:37,995 autoreload 55892 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 02:23:43,130 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:45,241 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:47,329 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:49,395 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:51,084 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:53,247 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:55,222 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:57,200 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:23:59,105 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:01,204 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:03,107 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:05,323 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:09,886 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:11,708 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:13,929 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:26,277 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:28,331 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:30,315 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:24:58,673 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:25:00,717 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:25:02,867 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:26:03,325 basehttp 55892 6201913344 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:26:04,044 autoreload 55884 8590729408 /Users/sherzamon/core/apps/bot/webhook.py changed, reloading.
+INFO 2025-09-01 02:26:04,255 autoreload 55892 8590729408 /Users/sherzamon/core/apps/bot/webhook.py changed, reloading.
+INFO 2025-09-01 02:26:04,625 autoreload 55997 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 02:26:04,630 autoreload 55998 8590729408 Watching for file changes with StatReloader
+INFO 2025-09-01 02:26:05,284 basehttp 55998 6158036992 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:26:07,253 basehttp 55998 6158036992 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:27:07,850 basehttp 55998 6158036992 "POST /api/bot HTTP/1.1" 301 0
+INFO 2025-09-01 02:27:19,740 basehttp 55998 6158036992 "POST /api/bot HTTP/1.1" 301 0

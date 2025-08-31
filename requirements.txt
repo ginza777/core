@@ -1,0 +1,51 @@
+# Django and REST Framework
+Django==5.1.4
+djangorestframework==3.15.2
+drf-yasg==1.21.8
+django-jazzmin==3.0.1
+
+# Database
+psycopg2-binary==2.9.10
+
+# Environment and Configuration
+python-environ==0.4.54
+python-dotenv==1.0.1
+
+# CORS and Security
+django-cors-headers==4.6.0
+
+# Filtering and Internationalization
+django-filter==24.3
+django-rosetta==0.10.1
+
+# Telegram Bot
+python-telegram-bot==21.9
+
+# Celery and Redis
+celery>=5.3.0
+redis==5.2.1
+django-celery-beat==2.7.0
+django-celery-results==2.5.1
+
+# Development Tools
+django-debug-toolbar==4.4.6
+
+# Production
+whitenoise
+gunicorn>=21.0.0
+
+# Monitoring
+django-prometheus==2.2.0
+
+# Search and File Processing
+elasticsearch==8.9.0
+elasticsearch-dsl==8.9.0
+django-elasticsearch-dsl==8.1
+tika==2.6.0
+python-magic==0.4.27
+
+# HTTP Requests
+requests>=2.31.0
+
+# Utilities
+setuptools
